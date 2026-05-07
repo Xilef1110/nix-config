@@ -94,7 +94,9 @@
         thunderbird
         wl-clipboard
         git
+        _1password-gui
         nil
+        libreoffice
       ];
 
       # List services that you want to enable:
