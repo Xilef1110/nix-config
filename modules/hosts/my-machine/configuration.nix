@@ -96,6 +96,9 @@
         _1password-gui
         nil
         libreoffice
+        gnomeExtensions.appindicator
+        gnomeExtensions.gsconnect
+        ignition
       ];
 
       # List services that you want to enable:
