@@ -8,7 +8,7 @@
         # Include the results of the hardware scan.
         self.nixosModules.myMachineHardware
         self.nixosModules.myHomeManager
-        self.nixosModules.dellNiriHomeModule
+        # self.nixosModules.dellNiriHomeModule
         self.nixosModules.niri
       ];
 
@@ -102,7 +102,7 @@
         "nix-command"
         "flakes"
       ];
-      services.power-proflies-daemon.enable = true;
+      services.power-profiles-daemon.enable = true;
       services.upower.enable = true;
 
       # This value determines the NixOS release from which the default
