@@ -1,6 +1,6 @@
 { self, inputs, ... }:
 {
-  flake.nixosModules.myMachineConfiguration =
+  flake.nixosModules.dellNIriConfiguration =
     { config, pkgs, ... }:
 
     {
@@ -8,7 +8,7 @@
         # Include the results of the hardware scan.
         self.nixosModules.myMachineHardware
         self.nixosModules.myHomeManager
-        self.nixosModules.felixModule
+        self.nixosModules.dellNiriModule
         # self.nixosModules.helix
 
       ];
