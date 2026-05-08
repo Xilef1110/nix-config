@@ -8,9 +8,8 @@
         # Include the results of the hardware scan.
         self.nixosModules.myMachineHardware
         self.nixosModules.myHomeManager
-        self.nixosModules.dellNiriModule
-        # self.nixosModules.helix
-
+        self.nixosModules.dellNiriHomeModule
+        self.nixosModules.niri
       ];
 
       # Bootloader.
@@ -31,10 +30,6 @@
 
       # Enable the X11 windowing system.
       services.xserver.enable = true;
-
-      # Enable the GNOME Desktop Environment.
-      services.xserver.displayManager.gdm.enable = true;
-      services.xserver.desktopManager.gnome.enable = true;
 
       # Configure keymap in X11
       services.xserver.xkb = {
@@ -97,8 +92,6 @@
         _1password-gui
         nil
         libreoffice
-        gnomeExtensions.appindicator
-        gnomeExtensions.gsconnect
         ignition
       ];
 
@@ -109,6 +102,8 @@
         "nix-command"
         "flakes"
       ];
+      services.power-proflies-daemon.enable = true;
+      services.upower.enable = true;
 
       # This value determines the NixOS release from which the default
       # settings for stateful data, like file locations and database versions
