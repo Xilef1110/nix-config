@@ -1,6 +1,6 @@
 { self, inputs, ... }:
 {
-  flake.nixosModules.dellNIriConfiguration =
+  flake.nixosModules.dellNiriConfiguration =
     { config, pkgs, ... }:
 
     {
