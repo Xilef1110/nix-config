@@ -89,7 +89,6 @@
         #  wget
         # helix
         signal-desktop
-        onedrive
         onedrivegui
         thunderbird
         wl-clipboard

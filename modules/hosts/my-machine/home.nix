@@ -44,6 +44,11 @@
           }
         ];
       };
+
+      programs.onedrive = {
+        enable = true;
+        package = pkgs.onedrive;
+      };
       home.stateVersion = "24.11";
     };
 
