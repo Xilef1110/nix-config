@@ -45,8 +45,8 @@
             "Ctrl+Alt+Left".focus-workspace-up = _: { };
 
             # Window Managment
-            "Ctrl+Left".consume-or-expel-window-left = _: { };
-            "Ctrl+Right".consume-or-expel-window-right = _: { };
+            "Mod+Ctrl+Left".consume-or-expel-window-left = _: { };
+            "Mod+Ctrl+Right".consume-or-expel-window-right = _: { };
             "Ctrl+Comma".consume-window-into-column = _: { };
             "Ctrl+Period".expel-window-from-column = _: { };
 
