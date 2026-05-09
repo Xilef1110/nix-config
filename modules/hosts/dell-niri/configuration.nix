@@ -96,6 +96,7 @@
         nautilus
         obsidian
         discord
+        kdePackages.kdeconnect-kde
       ];
 
       # List services that you want to enable:
