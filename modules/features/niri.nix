@@ -30,35 +30,36 @@
 
           layout.gaps = 5;
 
-          touchpad.natural-scroll = { };
+          # touchpad.natural-scroll = { };
 
           binds = {
             "Mod+Return".spawn-sh = lib.getExe pkgs.kitty;
-            "Mod+Q".close-window = { };
+            "Mod+Q".close-window = _: { };
             "Mod+S".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call launcher toggle";
+            "Mod+Space".spawn = "walker";
 
             # Window Navigation
-            "Mod+O".toggle-overview = { };
+            "Mod+O".toggle-overview = _: { };
 
-            "Mod+F".maximize-column = { };
-            "Mod+G".fullscreen-window = { };
-            "Mod+Shift+F".toggle-window-floating = { };
-            "Mod+C".center-column = { };
+            "Mod+F".maximize-column = _: { };
+            "Mod+G".fullscreen-window = _: { };
+            "Mod+Shift+F".toggle-window-floating = _: { };
+            "Mod+C".center-column = _: { };
 
-            "Mod+H".focus-column-left = { };
-            "Mod+L".focus-column-right = { };
-            "Mod+K".focus-window-up = { };
-            "Mod+J".focus-window-down = { };
+            "Mod+H".focus-column-left = _: { };
+            "Mod+L".focus-column-right = _: { };
+            "Mod+K".focus-window-up = _: { };
+            "Mod+J".focus-window-down = _: { };
 
-            "Mod+Left".focus-column-left = { };
-            "Mod+Right".focus-column-right = { };
-            "Mod+Up".focus-window-up = { };
-            "Mod+Down".focus-window-down = { };
+            "Mod+Left".focus-column-left = _: { };
+            "Mod+Right".focus-column-right = _: { };
+            "Mod+Up".focus-window-up = _: { };
+            "Mod+Down".focus-window-down = _: { };
 
-            "Mod+Shift+H".move-column-left = { };
-            "Mod+Shift+L".move-column-right = { };
-            "Mod+Shift+K".move-window-up = { };
-            "Mod+Shift+J".move-window-down = { };
+            "Mod+Shift+H".move-column-left = _: { };
+            "Mod+Shift+L".move-column-right = _: { };
+            "Mod+Shift+K".move-window-up = _: { };
+            "Mod+Shift+J".move-window-down = _: { };
 
             "Mod+1".focus-workspace = "w0";
             "Mod+2".focus-workspace = "w1";

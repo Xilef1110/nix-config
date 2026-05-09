@@ -93,6 +93,7 @@
         nil
         libreoffice
         ignition
+        nautilus
       ];
 
       # List services that you want to enable:
