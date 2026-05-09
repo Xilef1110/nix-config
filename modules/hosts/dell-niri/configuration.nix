@@ -98,6 +98,7 @@
         discord
         kdePackages.kdeconnect-kde
       ];
+      programs.kdeconnect.enable = true;
 
       # List services that you want to enable:
       hardware.bluetooth.enable = true;
