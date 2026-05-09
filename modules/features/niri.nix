@@ -40,27 +40,27 @@
             "Mod+S".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call launcher toggle";
 
             # Window Navigation
-            "Mod+O".toggle-overwiew = null;
+            "Mod+O".toggle-overview = { };
 
-            "Mod+F".maximize-column = null;
-            "Mod+G".fullscreen-window = null;
-            "Mod+Shift+F".toggle-window-floating = null;
-            "Mod+C".center-column = null;
+            "Mod+F".maximize-column = { };
+            "Mod+G".fullscreen-window = { };
+            "Mod+Shift+F".toggle-window-floating = { };
+            "Mod+C".center-column = { };
 
-            "Mod+H".focus-column-left = null;
-            "Mod+L".focus-column-right = null;
-            "Mod+K".focus-window-up = null;
-            "Mod+J".focus-window-down = null;
+            "Mod+H".focus-column-left = { };
+            "Mod+L".focus-column-right = { };
+            "Mod+K".focus-window-up = { };
+            "Mod+J".focus-window-down = { };
 
-            "Mod+Left".focus-column-left = null;
-            "Mod+Right".focus-column-right = null;
-            "Mod+Up".focus-window-up = null;
-            "Mod+Down".focus-window-down = null;
+            "Mod+Left".focus-column-left = { };
+            "Mod+Right".focus-column-right = { };
+            "Mod+Up".focus-window-up = { };
+            "Mod+Down".focus-window-down = { };
 
-            "Mod+Shift+H".move-column-left = null;
-            "Mod+Shift+L".move-column-right = null;
-            "Mod+Shift+K".move-window-up = null;
-            "Mod+Shift+J".move-window-down = null;
+            "Mod+Shift+H".move-column-left = { };
+            "Mod+Shift+L".move-column-right = { };
+            "Mod+Shift+K".move-window-up = { };
+            "Mod+Shift+J".move-window-down = { };
 
             "Mod+1".focus-workspace = "w0";
             "Mod+2".focus-workspace = "w1";
