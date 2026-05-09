@@ -30,7 +30,7 @@
 
           layout.gaps = 5;
 
-          output.scale = 1.0;
+          # output.scale = 1.0;
 
           # touchpad.natural-scroll = { };
 
