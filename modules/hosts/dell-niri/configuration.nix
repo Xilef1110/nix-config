@@ -94,6 +94,8 @@
         libreoffice
         ignition
         nautilus
+        obsidian
+        discord
       ];
 
       # List services that you want to enable:
