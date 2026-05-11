@@ -22,6 +22,8 @@
         settings = {
           spawn-at-startup = [
             (lib.getExe self'.packages.myNoctalia)
+            (lib.getExe pkgs.kdeconnect-indicator)
+            (lib.getExe pkgs.fuzzel)
           ];
 
           xwayland-satellite.path = lib.getExe pkgs.xwayland-satellite;
