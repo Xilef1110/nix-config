@@ -22,7 +22,7 @@
         settings = {
           spawn-at-startup = [
             (lib.getExe self'.packages.myNoctalia)
-            (lib.getExe pkgs.kdeconnect-indicator)
+            (lib.getExe pkgs.thunderbird)
             (lib.getExe pkgs.fuzzel)
           ];
 
