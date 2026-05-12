@@ -98,6 +98,7 @@
         discord
         kdePackages.kdeconnect-kde
         josm
+        signal
       ];
       programs.kdeconnect.enable = true;
 
