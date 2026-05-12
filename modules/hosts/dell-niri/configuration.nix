@@ -84,7 +84,7 @@
         #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
         #  wget
         # helix
-        # signal-desktop
+        signal-desktop
         onedrivegui
         thunderbird
         wl-clipboard
@@ -98,7 +98,6 @@
         discord
         kdePackages.kdeconnect-kde
         josm
-        signal
       ];
       programs.kdeconnect.enable = true;
 
