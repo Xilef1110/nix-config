@@ -98,6 +98,9 @@
         discord
         kdePackages.kdeconnect-kde
         josm
+        vlc
+        loupe
+        gthumb
       ];
       programs.kdeconnect.enable = true;
 
