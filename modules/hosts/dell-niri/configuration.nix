@@ -58,6 +58,17 @@
 
       services.xserver.displayManager.lightdm.greeters.gtk.iconTheme.package = pkgs.adwaita-icon-theme;
 
+      gtk = {
+        enable = true;
+        #Icon Theme
+        iconTheme = {
+          package = pkgs.adwaita-icon-theme;
+          name = "Adwaita";
+          # package = pkgs.kdePackages.breeze-icons;
+          # name = "Breeze-Dark";
+        };
+      };
+
       # Define a user account. Don't forget to set a password with ‘passwd’.
       users.users.felix = {
         isNormalUser = true;
