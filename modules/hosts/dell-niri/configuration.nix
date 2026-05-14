@@ -55,8 +55,8 @@
       services.openssh = {
         enable = true;
       };
-      # Enable touchpad support (enabled default in most desktopManager).
-      # services.xserver.libinput.enable = true;
+
+      services.xserver.displayManager.lightdm.greeters.gtk.iconTheme.package = pkgs.adwaita-icon-theme;
 
       # Define a user account. Don't forget to set a password with ‘passwd’.
       users.users.felix = {
@@ -72,7 +72,6 @@
       };
       home-manager.users.felix = self.homeModules.felixModule;
 
-      # Install firefox.
       programs.firefox.enable = true;
 
       # Allow unfree packages
