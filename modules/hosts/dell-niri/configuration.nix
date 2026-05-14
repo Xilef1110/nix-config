@@ -102,6 +102,9 @@
         _1password-gui
         nil
         libreoffice
+        hunspell
+        hunspellDicts.en-ca
+        hunspellDicts.de-at
         ignition
         nautilus
         obsidian
