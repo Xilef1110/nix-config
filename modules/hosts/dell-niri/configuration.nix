@@ -56,9 +56,9 @@
         enable = true;
       };
 
-      services.xserver.displayManager.lightdm.greeters.gtk.iconTheme.package = pkgs.adwaita-icon-theme;
+      # services.xserver.displayManager.lightdm.greeters.gtk.iconTheme.package = pkgs.adwaita-icon-theme;
 
-      gtk = {
+      services.xserver.displayManager.lightdm.greeters.gtk = {
         enable = true;
         #Icon Theme
         iconTheme = {
