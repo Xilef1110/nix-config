@@ -41,6 +41,7 @@
             "Mod+Q".close-window = _: { };
             "Mod+S".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call launcher toggle";
             "Mod+Space".spawn-sh = lib.getExe pkgs.fuzzel;
+            "Mod+A".spawn-sh = lib.getExe pkgs.myHelix;
 
             # Workspace Navigation
             "Ctrl+Alt+Right".focus-workspace-down = _: { };
