@@ -10,7 +10,6 @@
         self.nixosModules.myHomeManager
         # self.nixosModules.dellNiriHomeModule
         self.nixosModules.niri
-        self.nixosModules.helix
       ];
 
       # Bootloader.
