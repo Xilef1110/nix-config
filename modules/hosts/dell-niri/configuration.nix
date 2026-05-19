@@ -104,7 +104,6 @@
         hunspell
         hunspellDicts.en-ca
         hunspellDicts.de-at
-        ignition
         nautilus
         obsidian
         discord
@@ -113,6 +112,7 @@
         vlc
         loupe
         gthumb
+        xmage
       ];
       programs.kdeconnect.enable = true;
 
