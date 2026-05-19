@@ -8,12 +8,16 @@
     wrapper-modules.url = "github:BirdeeHub/nix-wrapper-modules";
 
     home-manager = {
-          url = "github:nix-community/home-manager";
-          inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = inputs: inputs.flake-parts.lib.mkFlake
-    {inherit inputs;}
-    (inputs.import-tree ./modules);
+  outputs =
+    inputs@{ flake-parts, nixpkgs, ... }:
+    flake-parts.lib.mkFlake
+
+      { inherit inputs; }
+      (inputs.import-tree ./modules);
+
 }
