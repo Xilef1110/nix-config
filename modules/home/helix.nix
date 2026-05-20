@@ -1,6 +1,6 @@
 { self, inputs, ... }:
 {
-  flake.homeModules.helix =
+  flake.homeModules.dellNiriHomeModule =
     { pkgs, lib, ... }:
     {
 

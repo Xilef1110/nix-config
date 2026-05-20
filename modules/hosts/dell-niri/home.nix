@@ -11,8 +11,7 @@
         home.username = "felix";
         home.homeDirectory = "/home/felix";
       }
-      self.homeModules.helix
-      { }
+
     ];
   };
 
