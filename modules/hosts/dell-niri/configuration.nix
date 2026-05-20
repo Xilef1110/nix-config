@@ -8,7 +8,6 @@
         # Include the results of the hardware scan.
         self.nixosModules.myMachineHardware
         self.nixosModules.myHomeManager
-        self.homeModules.dellNiriHomeModule
         self.nixosModules.niri
         self.nixosModules.packages
       ];
