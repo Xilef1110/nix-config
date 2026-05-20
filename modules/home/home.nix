@@ -21,6 +21,7 @@
     {
       programs.bash.enable = true;
       programs.bash.shellAliases.ll = "ls -l";
+      programs.vscode.enable = true;
 
       home.packages = [ pkgs.hello ];
       # programs.helix = {
