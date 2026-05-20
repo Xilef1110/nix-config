@@ -34,8 +34,10 @@
               "A-i" = "normal_mode";
             };
           };
-          editor.soft-wrap.enable = true;
-          editor.line-number = "relative";
+          editor = {
+            soft-wrap.enable = true;
+            line-number = "relative";
+          };
         };
         languages.language = [
           {
