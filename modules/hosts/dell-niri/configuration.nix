@@ -8,7 +8,7 @@
         # Include the results of the hardware scan.
         self.nixosModules.myMachineHardware
         self.nixosModules.myHomeManager
-        # self.nixosModules.dellNiriHomeModule
+        self.homeModules.dellNiriHomeModule
         self.nixosModules.niri
         self.nixosModules.packages
       ];
@@ -82,7 +82,7 @@
           #  thunderbird
         ];
       };
-      home-manager.users.felix = self.homeModules.felixModule;
+      home-manager.users.felix = self.homeModules.dellNiriHomeModule;
 
       programs.firefox.enable = true;
 
