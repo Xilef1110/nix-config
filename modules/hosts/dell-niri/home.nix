@@ -22,6 +22,7 @@
     {
       imports = [
         self.homeModules.Zed
+        self.homeModules.helix
       ];
       programs.bash.enable = true;
       programs.bash.shellAliases.ll = "ls -l";
