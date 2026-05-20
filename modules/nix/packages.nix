@@ -24,6 +24,7 @@
         loupe
         gthumb
         xmage
+        librewolf
       ];
       programs.kdeconnect.enable = true;
     };
