@@ -35,6 +35,7 @@
             };
           };
           editor.soft-wrap.enable = true;
+          editor.line-number = "relative";
         };
         languages.language = [
           {
