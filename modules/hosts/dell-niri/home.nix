@@ -20,6 +20,9 @@
   flake.homeModules.dellNiriHomeModule =
     { pkgs, lib, ... }:
     {
+      imports = [
+        self.homeModules.Zed
+      ];
       programs.bash.enable = true;
       programs.bash.shellAliases.ll = "ls -l";
 

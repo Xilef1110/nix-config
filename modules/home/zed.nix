@@ -1,7 +1,7 @@
 { self, inputs, ... }:
 {
 
-  flake.homeModules.dellNiriHomeModule =
+  flake.homeModules.Zed =
     { pkgs, lib, ... }:
     {
 
