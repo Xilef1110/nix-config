@@ -14,13 +14,18 @@
         ];
         userSettings = {
           theme = {
-            mode = "system";
-            dark = "One Dark";
-            light = "One Light";
+            mode = "dark";
+            light = "Gruvbox Light";
+            dark = "Catppuccin Frappe";
           };
-          hour_format = "hour24";
           helix_mode = true;
-          assistant.enabled = false;
+          disable_ai = true;
+          relative_line_number = "enabled";
+
+          project_panel.dock = "left";
+          outline_panel.dock = "left";
+          collaboration_panel.dock = "left";
+          git_panel.dock = "left";
         };
       };
     };
