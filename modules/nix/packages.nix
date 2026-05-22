@@ -11,6 +11,7 @@
         git
         _1password-gui
         nil
+        nixd
         libreoffice
         hunspell
         hunspellDicts.en-ca

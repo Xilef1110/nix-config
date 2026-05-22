@@ -8,13 +8,13 @@
       programs.zed-editor = {
         # test
         enable = true;
+        extensions = [
+          "nix"
+          "toml"
+          "rust"
+          "catppuccin"
+        ];
         userSettings = {
-          extensions = [
-            "nix"
-            "toml"
-            "rust"
-            "catppuccin"
-          ];
           theme = {
             mode = "dark";
             light = "Gruvbox Light";
@@ -28,6 +28,21 @@
           outline_panel.dock = "left";
           collaboration_panel.dock = "left";
           git_panel.dock = "left";
+          inlay_hints.enabled = true;
+          lsp = {
+
+            rust-analyzer = {
+              binary = {
+                # path = lib.getExe pkgs.rust-analyzer;
+                path_lookup = true;
+              };
+            };
+            nix = {
+              binary = {
+                path_lookup = true;
+              };
+            };
+          };
         };
 
         userKeymaps = [
@@ -38,9 +53,9 @@
             };
           }
           {
-            context = "Editor && vim_mode == insert";
+            context = "(Editor && vim_mode == normal) || !menu";
             bindings = {
-              "alt-i" = "vim::NormalBefore";
+              "Ctrl-s" = "workspace::Save";
             };
 
           }
