@@ -26,6 +26,22 @@
           outline_panel.dock = "left";
           collaboration_panel.dock = "left";
           git_panel.dock = "left";
+
+          userKeymaps = [
+            {
+              context = "Editor && vim_mode == insert";
+              bindings = {
+                alt-i = "vim::NormalBefore";
+              };
+            }
+            {
+              context = "Editor && vim_mode == insert";
+              bindings = {
+                "alt-i" = "vim::NormalBefore";
+              };
+
+            }
+          ];
         };
       };
     };
