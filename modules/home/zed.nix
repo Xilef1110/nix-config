@@ -7,8 +7,8 @@
 
       programs.zed-editor = {
         # test
+        enable = true;
         userSettings = {
-          enable = true;
           extensions = [
             "nix"
             "toml"
