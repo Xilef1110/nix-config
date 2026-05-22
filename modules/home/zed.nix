@@ -6,43 +6,46 @@
     {
 
       programs.zed-editor = {
-        enable = true;
-        extensions = [
-          "nix"
-          "toml"
-          "rust"
-        ];
+        # test
         userSettings = {
+          enable = true;
+          extensions = [
+            "nix"
+            "toml"
+            "rust"
+            "catppuccin"
+          ];
           theme = {
             mode = "dark";
             light = "Gruvbox Light";
-            dark = "Catppuccin Frappe";
+            dark = "Catppuccin Frappé";
           };
           helix_mode = true;
           disable_ai = true;
-          relative_line_number = "enabled";
+          relative_line_numbers = "enabled";
 
           project_panel.dock = "left";
           outline_panel.dock = "left";
           collaboration_panel.dock = "left";
           git_panel.dock = "left";
-
-          userKeymaps = [
-            {
-              context = "Editor && vim_mode == insert";
-              bindings = {
-                alt-i = "vim::NormalBefore";
-              };
-            }
-            {
-              context = "Editor && vim_mode == insert";
-              bindings = {
-                "alt-i" = "vim::NormalBefore";
-              };
-
-            }
-          ];
         };
+
+        userKeymaps = [
+          {
+            context = "Editor && vim_mode == insert";
+            bindings = {
+              alt-i = "vim::NormalBefore";
+            };
+          }
+          {
+            context = "Editor && vim_mode == insert";
+            bindings = {
+              "alt-i" = "vim::NormalBefore";
+            };
+
+          }
+        ];
       };
     };
+
 }
