@@ -35,21 +35,21 @@
           font_size = 11;
           font_family = "JetBrainsMono Nerd Font";
 
-          cursor_text_color = "background";
-
           allow_remote_control = "yes";
           shell_integration = "enabled";
-
-          cursor_trail = 3;
 
           # Background
           background = self.theme.base00;
           background_opacity = 0.9;
           background_blur = 1;
 
-          foreground = self.theme.base07;
+          foreground = self.theme.base0E;
 
-          cursor = self.theme.base07;
+          # Cursor
+          cursor = self.theme.base0C;
+          cursor_trail = 3;
+          # cursor_text_color = "background";
+          cursor_text_color = self.theme.base0D;
 
           selection_foreground = self.theme.base02;
           selection_background = self.theme.base01;
