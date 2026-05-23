@@ -25,7 +25,7 @@
       ...
     }:
     {
-      packages.myKitty = inputs.wrappers-modules.wrappers.kitty.wrap {
+      packages.myKitty = inputs.wrapper-modules.wrappers.kitty.wrap {
         inherit pkgs;
 
         # args = lib.mkAfter (lib.optionals (config.shell != "") [ config.shell ]);
