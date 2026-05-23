@@ -39,8 +39,7 @@
           binds = {
             "Mod+Return".spawn-sh = lib.getExe self'.packages.myKitty;
             "Mod+Q".close-window = _: { };
-            "Mod+S".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call launcher toggle";
-            "Mod+Space".spawn-sh = lib.getExe pkgs.fuzzel;
+            "Mod+Space".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call launcher toggle";
             "Mod+A".spawn-sh = lib.getExe self'.packages.myHelix;
 
             # Workspace Navigation
