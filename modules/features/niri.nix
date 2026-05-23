@@ -23,7 +23,7 @@
           spawn-at-startup = [
             (lib.getExe self'.packages.myNoctalia)
             (lib.getExe pkgs.thunderbird)
-            (lib.getExe pkgs.fuzzel)
+            "${lib.getExe self'.packages.myNoctalia} ipc call launcher toggle"
           ];
 
           xwayland-satellite.path = lib.getExe pkgs.xwayland-satellite;
@@ -41,7 +41,6 @@
             "Mod+Q".close-window = _: { };
             "Mod+Space".spawn-sh = "${lib.getExe self'.packages.myNoctalia} ipc call launcher toggle";
             "Mod+A".spawn-sh = lib.getExe self'.packages.myHelix;
-            "Mod+S".spawn-sh = lib.getExe pkgs.fuzzel;
 
             # Workspace Navigation
             "Ctrl+Alt+Right".focus-workspace-down = _: { };
