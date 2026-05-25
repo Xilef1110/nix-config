@@ -23,6 +23,7 @@
       imports = [
         self.homeModules.Zed
         self.homeModules.helix
+        self.homeModules.firefox
       ];
       programs.bash.enable = true;
       programs.bash.shellAliases.ll = "ls -l";
