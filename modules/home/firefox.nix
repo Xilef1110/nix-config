@@ -70,7 +70,7 @@
       # Profile Config
       profiles.default = {
 
-        bookmarks = self.homeModules.firefox.bookmarks;
+        # bookmarks = self.homeModules.fire-bookmarks;
         # Search Engines
         search = {
           force = true;

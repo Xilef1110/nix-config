@@ -1,6 +1,6 @@
 { self, ... }:
 {
-  flake.homeModules.firefox.bookmarks =
+  flake.homeModules.fire-bookmarks =
     { ... }:
     [
       {
