@@ -5,7 +5,6 @@
     {
       environment.systemPackages = with pkgs; [
         onedrivegui
-        wl-clipboard
         git
         _1password-gui
         nil
