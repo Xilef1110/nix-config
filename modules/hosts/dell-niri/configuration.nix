@@ -10,6 +10,7 @@
         self.nixosModules.myHomeManager
         self.nixosModules.niri
         self.nixosModules.packages
+        self.nixosModules.communication
       ];
 
       # Bootloader.

@@ -4,9 +4,7 @@
     { pkgs, lib, ... }:
     {
       environment.systemPackages = with pkgs; [
-        signal-desktop
         onedrivegui
-        thunderbird
         wl-clipboard
         git
         _1password-gui
@@ -18,7 +16,6 @@
         hunspellDicts.de-at
         nautilus
         obsidian
-        discord
         kdePackages.kdeconnect-kde
         josm
         vlc
