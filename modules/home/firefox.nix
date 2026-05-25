@@ -3,7 +3,6 @@
   flake.homeModules.firefox =
     { pkgs, lib, ... }:
     {
-
       programs.firefox = {
         enable = true;
         languagePack = [
@@ -71,7 +70,7 @@
       # Profile Config
       profiles.default = {
 
-        bookmarks = ./firefox-bookmarks.nix;
+        bookmarks = self.homeModules.firefox.bookmarks;
         # Search Engines
         search = {
           force = true;
