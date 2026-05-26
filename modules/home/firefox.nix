@@ -69,12 +69,24 @@
         # Profile Config
         profiles.default = {
 
-          # bookmarks = self.homeModules.fire-bookmarks;
+          bookmarks = {
+            force = true;
+            setting = [
+              {
+                name = "kernel.org";
+                url = "https://www.kernel.org";
+              }
+              {
+                name = "nixconf/wrappedPrograms/niri.nix at main · vimjoyer/nixconf";
+                url = "https://github.com/vimjoyer/nixconf/blob/main/wrappedPrograms/niri.nix";
+              }
+            ];
+          };
           # Search Engines
           search = {
             force = true;
-            default = "DuckDuckGo";
-            privateDefault = "DuckDuckGo";
+            default = "ddg";
+            privateDefault = "ddg";
 
             engines = {
               "Nix Packages" = {
