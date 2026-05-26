@@ -86,27 +86,6 @@
             force = true;
             settings = [
               {
-                name = "Mozilla Firefox";
-                bookmarks = [
-                  {
-                    name = "Get Help";
-                    url = "https://support.mozilla.org/products/firefox";
-                  }
-                  {
-                    name = "Customize Firefox";
-                    url = "https://support.mozilla.org/kb/customize-firefox-controls-buttons-and-toolbars?utm_source=firefox-browser&utm_medium=default-bookmarks&utm_campaign=customize";
-                  }
-                  {
-                    name = "Get Involved";
-                    url = "https://www.mozilla.org/contribute/";
-                  }
-                  {
-                    name = "About Us";
-                    url = "https://www.mozilla.org/about/";
-                  }
-                ];
-              }
-              {
                 name = "kernel.org";
                 url = "https://www.kernel.org";
               }
@@ -130,6 +109,10 @@
                     name = "Home - Workday";
                     url = "https://wd10.myworkday.com/ubc/d/home.htmld";
                   }
+                  {
+                    name = "Scope - coop";
+                    url = "https://scope.sciencecoop.ubc.ca/";
+                  }
                 ];
               }
               {
@@ -151,6 +134,10 @@
                     name = "TrainingPeaks - Plan your training, track your workouts and measure your progress";
                     url = "https://app.trainingpeaks.com/#calendar";
                   }
+                  {
+                    name = "Google Calender";
+                    url = "https://calendar.google.com/calendar/u/0/r";
+                  }
                 ];
               }
               {
@@ -171,6 +158,24 @@
                       {
                         name = "Dicecloud";
                         url = "https://dicecloud.com/";
+                      }
+                    ];
+                  }
+                ];
+              }
+              {
+                name = "Coding";
+                bookmarks = [
+                  {
+                    name = "Interpreter";
+                    bookmarks = [
+                      {
+                        name = "Lox Tutorial";
+                        url = "https://craftinginterpreters.com/contents.html";
+                      }
+                      {
+                        name = "Inter github";
+                        url = "https://github.com/Xilef1110/Interpreter";
                       }
                     ];
                   }
