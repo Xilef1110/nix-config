@@ -154,6 +154,29 @@
                 ];
               }
               {
+                name = "Personal";
+                bookmarks = [
+                  {
+                    name = "MTG";
+                    bookmarks = [
+                      {
+                        name = "Scryfall";
+                        url = "https://scryfall.com/";
+                      }
+                    ];
+                  }
+                  {
+                    name = "RPGs";
+                    bookmarks = [
+                      {
+                        name = "Dicecloud";
+                        url = "https://dicecloud.com/";
+                      }
+                    ];
+                  }
+                ];
+              }
+              {
                 name = "Bookmarks Toolbar";
                 toolbar = true;
                 bookmarks = [
