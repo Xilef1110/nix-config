@@ -68,73 +68,73 @@
       };
 
       # Profile Config
-      profiles.default = {
+      # profiles.default = {
 
-        # bookmarks = self.homeModules.fire-bookmarks;
-        # Search Engines
-        search = {
-          force = true;
-          default = "DuckDuckGo";
-          privateDefault = "DuckDuckGo";
+      #   # bookmarks = self.homeModules.fire-bookmarks;
+      #   # Search Engines
+      #   search = {
+      #     force = true;
+      #     default = "DuckDuckGo";
+      #     privateDefault = "DuckDuckGo";
 
-          engines = {
-            "Nix Packages" = {
-              urls = [
-                {
-                  template = "https://search.nixos.org/packages";
-                  params = [
-                    {
-                      name = "channel";
-                      value = "unstable";
-                    }
-                    {
-                      name = "query";
-                      value = "{searchTerms}";
-                    }
-                  ];
-                }
-              ];
-              icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
-              definedAliases = [ "@np" ];
-            };
+      #     engines = {
+      #       "Nix Packages" = {
+      #         urls = [
+      #           {
+      #             template = "https://search.nixos.org/packages";
+      #             params = [
+      #               {
+      #                 name = "channel";
+      #                 value = "unstable";
+      #               }
+      #               {
+      #                 name = "query";
+      #                 value = "{searchTerms}";
+      #               }
+      #             ];
+      #           }
+      #         ];
+      #         icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
+      #         definedAliases = [ "@np" ];
+      #       };
 
-            "Nix Options" = {
-              urls = [
-                {
-                  template = "https://search.nixos.org/options";
-                  params = [
-                    {
-                      name = "channel";
-                      value = "unstable";
-                    }
-                    {
-                      name = "query";
-                      value = "{searchTerms}";
-                    }
-                  ];
-                }
-              ];
-              icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
-              definedAliases = [ "@no" ];
-            };
+      #       "Nix Options" = {
+      #         urls = [
+      #           {
+      #             template = "https://search.nixos.org/options";
+      #             params = [
+      #               {
+      #                 name = "channel";
+      #                 value = "unstable";
+      #               }
+      #               {
+      #                 name = "query";
+      #                 value = "{searchTerms}";
+      #               }
+      #             ];
+      #           }
+      #         ];
+      #         icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
+      #         definedAliases = [ "@no" ];
+      #       };
 
-            "NixOS Wiki" = {
-              urls = [
-                {
-                  template = "https://wiki.nixos.org/w/index.php";
-                  params = [
-                    {
-                      name = "search";
-                      value = "{searchTerms}";
-                    }
-                  ];
-                }
-              ];
-              icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
-              definedAliases = [ "@nw" ];
-            };
-          };
-        };
-      };
+      #       "NixOS Wiki" = {
+      #         urls = [
+      #           {
+      #             template = "https://wiki.nixos.org/w/index.php";
+      #             params = [
+      #               {
+      #                 name = "search";
+      #                 value = "{searchTerms}";
+      #               }
+      #             ];
+      #           }
+      #         ];
+      #         icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
+      #         definedAliases = [ "@nw" ];
+      #       };
+      #     };
+      # };
+      # };
     };
 }
