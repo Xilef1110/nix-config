@@ -18,6 +18,9 @@
           GenerativeAI.enabled = false;
           DisableFirefoxAccounts = true;
 
+          # Behavior/UI
+          Hompage = "previous-session";
+          OfferToSaveLogins = false;
           FirefoxHome = {
             SponsoredTopSites = false;
             Highlights = false;
