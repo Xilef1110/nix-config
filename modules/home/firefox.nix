@@ -18,6 +18,16 @@
           GenerativeAI.enabled = false;
           DisableFirefoxAccounts = true;
 
+          FirefoxHome = {
+            SponsoredTopSites = false;
+            Highlights = false;
+            Pocket = false;
+            Stories = false;
+            SponsoredPocket = false;
+            SponsoredStories = false;
+            Snippets = false;
+          };
+
           FirefoxSuggest = {
             SponsoredSuggestions = false;
           };
@@ -71,7 +81,7 @@
 
           bookmarks = {
             force = true;
-            setting = [
+            settings = [
               {
                 name = "kernel.org";
                 url = "https://www.kernel.org";
