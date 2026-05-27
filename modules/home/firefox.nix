@@ -19,7 +19,7 @@
           DisableFirefoxAccounts = true;
 
           # Behavior/UI
-          Hompage = "previous-session";
+          Homepage = "previous-session";
           OfferToSaveLogins = false;
           FirefoxHome = {
             SponsoredTopSites = false;
