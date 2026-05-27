@@ -32,7 +32,7 @@
         settings = {
           # Theme
           # Alternates: Base2Tone Meadow Dark; Base2Tone Field Dark; Base4Tone_Classic_I Dark; Catppuccin-Frappe;
-          theme = "box";
+          # theme = "box";
 
           enable_audio_bell = "no";
 
@@ -40,48 +40,48 @@
           font_family = "JetBrainsMono Nerd Font";
 
           allow_remote_control = "yes";
-          shell_integration = "enabled";
+          # shell_integration = "enabled no-cwd";
 
           # Background
-          # background = self.theme.base00;
+          background = self.theme.base00;
           background_opacity = 0.9;
           background_blur = 1;
 
-          # foreground = self.theme.base0E;
+          foreground = self.theme.base0E;
 
           # Cursor
-          # cursor = self.theme.base0C;
+          cursor = self.theme.base0C;
           cursor_trail = 3;
           # cursor_text_color = "background";
-          # cursor_text_color = self.theme.base0D;
+          cursor_text_color = self.theme.base0D;
 
-          # selection_foreground = self.theme.base02;
-          # selection_background = self.theme.base01;
+          selection_foreground = self.theme.base02;
+          selection_background = self.theme.base01;
 
           # Tab managment
           tab_bar_edge = "bottom";
           tab_bar_style = "powerline";
-          # active_tab_foreground = self.theme.base0B;
-          # active_tab_background = self.theme.base03;
-          # inactive_tab_background = self.theme.base01;
+          active_tab_foreground = self.theme.base0B;
+          active_tab_background = self.theme.base03;
+          inactive_tab_background = self.theme.base01;
 
           # import themes
-          # color0 = self.theme.base00;
-          # color8 = self.theme.base02;
-          # color1 = self.theme.base08;
-          # color9 = self.theme.base08;
-          # color2 = self.theme.base0B;
-          # color10 = self.theme.base0B;
-          # color3 = self.theme.base0A;
-          # color11 = self.theme.base0A;
-          # color4 = self.theme.base0D;
-          # color12 = self.theme.base0D;
-          # color5 = self.theme.base0E;
-          # color13 = self.theme.base0E;
-          # color6 = self.theme.base0C;
-          # color14 = self.theme.base0C;
-          # color7 = self.theme.base03;
-          # color15 = self.theme.base03;
+          color0 = self.theme.base00;
+          color8 = self.theme.base02;
+          color1 = self.theme.base08;
+          color9 = self.theme.base08;
+          color2 = self.theme.base0B;
+          color10 = self.theme.base0B;
+          color3 = self.theme.base0A;
+          color11 = self.theme.base0A;
+          color4 = self.theme.base0D;
+          color12 = self.theme.base0D;
+          color5 = self.theme.base0E;
+          color13 = self.theme.base0E;
+          color6 = self.theme.base0C;
+          color14 = self.theme.base0C;
+          color7 = self.theme.base03;
+          color15 = self.theme.base03;
         };
         keybindings = {
           "alt+1" = "goto_tab 1";
