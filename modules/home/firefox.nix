@@ -17,9 +17,10 @@
           DisableRemoteImprovements = true;
           GenerativeAI.enabled = false;
           DisableFirefoxAccounts = true;
+          DontCheckDefaultBrowser = true;
 
           # Behavior/UI
-          Homepage = "previous-session";
+          Homepage.StartPage = "previous-session";
           OfferToSaveLogins = false;
           FirefoxHome = {
             SponsoredTopSites = false;
@@ -39,6 +40,7 @@
           DNSOverHTTPS = {
             Enabled = true;
             ProviderURL = "https://base.dns.mullvad.net/dns-query";
+            Fallback = false;
           };
           HttpsOnlyMode = "enabled";
           EnableTrackingProtection = {
