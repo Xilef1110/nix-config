@@ -9,6 +9,7 @@
           "en-CA"
           "en-US"
         ];
+        configPath = ".mozilla/firefox";
 
         policies = {
           # Disable Featurs
