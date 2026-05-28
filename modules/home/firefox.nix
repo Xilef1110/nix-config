@@ -83,6 +83,9 @@
 
         # Profile Config
         profiles.default = {
+          id = 0;
+          name = "default";
+          isDefault = true;
 
           bookmarks = {
             force = true;
