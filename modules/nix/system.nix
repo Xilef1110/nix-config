@@ -18,5 +18,8 @@
         bat
         zoxide
       ];
+      security.pki.certificateFiles = [
+        ./DigiCertGlobalRootCA.crt
+      ];
     };
 }
