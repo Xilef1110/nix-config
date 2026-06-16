@@ -11,7 +11,7 @@
 
     home.packages = [ pkgs.hello ];
 
-    progrrams.onedrive = {
+    programs.onedrive = {
       enable = true;
       package = pkgs.onedrive;
     };
