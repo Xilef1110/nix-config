@@ -1,6 +1,6 @@
 { self, inputs, ... }:
 {
-  flake.nixosModules.communication =
+  flake.nixosModules.system=
     { pkgs, ... }:
     {
 

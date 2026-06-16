@@ -11,6 +11,7 @@
         self.nixosModules.niri
         self.nixosModules.packages
         self.nixosModules.communication
+        self.nixosModules.system
       ];
 
       # Bootloader.
