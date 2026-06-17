@@ -103,6 +103,7 @@
         helix
         git
         wl-clipboard
+        gnome-extension-manager
         gnomeExtensions.gsconnect
         gnomeExtensions.simpleweather
         gnomeExtensions.places-status-indicator
