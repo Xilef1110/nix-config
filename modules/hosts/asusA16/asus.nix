@@ -4,6 +4,14 @@
     { config, pkgs, ... }:
     {
 
+      imports = [
+        # Include the results of the hardware scan.
+        self.nixosModules.myHomeManager
+        self.nixosModules.asusHardware
+        self.nixosModules.packages
+        self.nixosModules.communication
+        self.nixosModules.system
+      ];
       # Bootloader.
       boot.loader.systemd-boot.enable = true;
       boot.loader.efi.canTouchEfiVariables = true;
