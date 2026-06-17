@@ -36,6 +36,11 @@
 
           # touchpad.natural-scroll = { };
 
+          cursor = {
+            xcursor-theme = "breeze_cursors";
+            xcursor-size = 8;
+          };
+
           binds = {
             "Mod+Return".spawn-sh = lib.getExe self'.packages.myKitty;
             "Mod+Q".close-window = _: { };
