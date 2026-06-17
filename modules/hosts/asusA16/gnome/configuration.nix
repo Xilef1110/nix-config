@@ -103,6 +103,11 @@
         helix
         git
         wl-clipboard
+        gnomeExtensions.gsconnect
+        gnomeExtensions.simpleweather
+        gnomeExtensions.places-status-indicator
+        gnomeExtensions.vitals
+        gnomeExtensions.extension-list
       ];
       environment.gnome.excludePackages = with pkgs; [
         atomix # puzzle game
