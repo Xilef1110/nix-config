@@ -1,6 +1,6 @@
 { self, inputs, ... }:
 {
-  flake.nixosModule.asusShared =
+  flake.nixosModules.asusShared =
     { config, pkgs, ... }:
     {
 
