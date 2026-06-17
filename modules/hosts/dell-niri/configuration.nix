@@ -58,8 +58,6 @@
         enable = true;
       };
 
-      # services.xserver.displayManager.lightdm.greeters.gtk.iconTheme.package = pkgs.adwaita-icon-theme;
-
       services.xserver.displayManager.lightdm.greeters.gtk = {
         enable = true;
         #Icon Theme
@@ -85,36 +83,8 @@
       };
       home-manager.users.felix = self.homeModules.dellNiriHomeModule;
 
-      # programs.firefox.enable = true;
-
       # Allow unfree packages
       nixpkgs.config.allowUnfree = true;
-
-      # List packages installed in system profile. To search, run:
-      # $ nix search wget
-      # environment.systemPackages = with pkgs; [
-      #   signal-desktop
-      #   onedrivegui
-      #   thunderbird
-      #   wl-clipboard
-      #   git
-      #   _1password-gui
-      #   nil
-      #   libreoffice
-      #   hunspell
-      #   hunspellDicts.en-ca
-      #   hunspellDicts.de-at
-      #   nautilus
-      #   obsidian
-      #   discord
-      #   kdePackages.kdeconnect-kde
-      #   josm
-      #   vlc
-      #   loupe
-      #   gthumb
-      #   xmage
-      # ];
-      # programs.kdeconnect.enable = true;
 
       # List services that you want to enable:
       hardware.bluetooth.enable = true;
