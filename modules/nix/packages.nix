@@ -21,7 +21,7 @@
         loupe
         gthumb
         xmage
-        librewolf
+        mullvad-browser
       ];
       programs.kdeconnect.enable = true;
     };
