@@ -9,6 +9,7 @@
         self.nixosModules.asusShared
       ];
 
+      home-manager.users.felix = self.homeModules.asusGnomeHomeModule;
       # Enable the GNOME Desktop Environment.
       services.displayManager.gdm.enable = true;
       services.desktopManager.gnome.enable = true;

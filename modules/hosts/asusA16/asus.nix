@@ -53,7 +53,7 @@
         "nix-command"
         "flakes"
       ];
-      home-manager.users.felix = self.homeModules.asusHomeModule;
+      # home-manager.users.felix = self.homeModules.asusHomeModule;
 
       # Allow unfree packages
       nixpkgs.config.allowUnfree = true;

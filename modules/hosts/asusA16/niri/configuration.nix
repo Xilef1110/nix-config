@@ -28,6 +28,7 @@
         };
       };
 
+      home-manager.users.felix = self.homeModules.asusHomeModule;
       # List services that you want to enable:
       hardware.bluetooth.enable = true;
       networking.wireless.enable = true;
