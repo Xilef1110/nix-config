@@ -11,6 +11,7 @@
         self.nixosModules.packages
         self.nixosModules.communication
         self.nixosModules.system
+        self.nixosModules.downloadManagement
       ];
       # Bootloader.
       boot.loader.systemd-boot.enable = true;
