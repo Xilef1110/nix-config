@@ -6,6 +6,7 @@
       imports = [
         self.homeModules.helix
         self.homeModules.firefox
+        self.homeModules.ghostty
       ];
       programs.bash.enable = true;
       programs.bash.shellAliases.ll = "ls -l";
