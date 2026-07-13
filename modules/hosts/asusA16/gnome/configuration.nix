@@ -26,6 +26,7 @@
         gnomeExtensions.places-status-indicator
         gnomeExtensions.vitals
         gnomeExtensions.extension-list
+        gnomeExtensions.appindicator
       ];
       environment.gnome.excludePackages = with pkgs; [
         atomix # puzzle game
