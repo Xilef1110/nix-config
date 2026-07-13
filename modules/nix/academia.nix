@@ -6,7 +6,8 @@
 
       environment.systemPackages = with pkgs; [
         zotero
-        # typst language server
+        # typst
+        typst
         tinymist
       ];
     };
