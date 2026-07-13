@@ -1,6 +1,6 @@
 { self, inputs, ... }:
 {
-  flake.nixosModules.system =
+  flake.nixosModules.academia =
     { pkgs, ... }:
     {
 
