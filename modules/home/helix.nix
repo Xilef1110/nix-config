@@ -18,6 +18,7 @@
           editor = {
             soft-wrap.enable = true;
             line-number = "relative";
+            bufferline = "always";
           };
         };
         languages.language = [
