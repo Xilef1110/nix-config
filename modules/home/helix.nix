@@ -27,7 +27,7 @@
             # formatter.command = lib.getExe pkgs.nixfmt-rfc-style;
           }
           {
-            name = "pyton";
+            name = "python";
             auto-format = true;
             language-servers = [
               {
