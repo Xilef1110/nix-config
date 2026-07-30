@@ -11,7 +11,7 @@
         extensions = [
           "nix"
           "toml"
-          "rust"
+          # "rust"
           "catppuccin"
         ];
         userSettings = {
@@ -28,33 +28,42 @@
           outline_panel.dock = "left";
           collaboration_panel.dock = "left";
           git_panel.dock = "left";
+
+          # Hints and Preditioncs
           inlay_hints.enabled = true;
+          edit_predictions.mode = "eager";
+          show_edit_predictions = true;
+          inline_code_actions = true;
+          lsp_document_colors = "inlay";
+          colorize_brackets = true;
+
+          # Language Specific Settings
           lsp = {
 
             rust-analyzer = {
               binary = {
                 # path = lib.getExe pkgs.rust-analyzer;
-                path_lookup = true;
+                # path_lookup = true;
               };
             };
-            nix = {
+            nil = {
               binary = {
-                path_lookup = true;
+                # path_lookup = true;
+              };
+            };
+            nixd = {
+              binary = {
+                # path_lookup = true;
               };
             };
             ty = {
               binary = {
-                path_lookup = true;
+                # path_lookup = true;
               };
             };
             ruff = {
               binary = {
-                path_lookup = true;
-              };
-            };
-            jedi = {
-              binary = {
-                path_lookup = true;
+                # path_lookup = true;
               };
             };
           };
