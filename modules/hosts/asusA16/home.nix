@@ -7,6 +7,7 @@
         self.homeModules.helix
         self.homeModules.firefox
         self.homeModules.ghostty
+        self.homeModules.zed
       ];
       programs.bash.enable = true;
       programs.bash.shellAliases.ll = "ls -l";

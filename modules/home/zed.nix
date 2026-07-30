@@ -1,7 +1,7 @@
 { self, inputs, ... }:
 {
 
-  flake.homeModules.Zed =
+  flake.homeModules.zed =
     { pkgs, lib, ... }:
     {
 
@@ -42,6 +42,32 @@
                 path_lookup = true;
               };
             };
+            ty = {
+              binary = {
+                path_lookup = true;
+              };
+            };
+            ruff = {
+              binary = {
+                path_lookup = true;
+              };
+            };
+            jedi = {
+              binary = {
+                path_lookup = true;
+              };
+            };
+          };
+          languages = {
+            "Python" = {
+              language_servers = [
+                "!basedpyright"
+                "ty"
+                "ruff"
+                "jedi"
+              ];
+            };
+
           };
         };
 
