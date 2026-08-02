@@ -195,6 +195,10 @@
                     name = "NixOS Search - Packages";
                     url = "https://search.nixos.org/packages";
                   }
+                  {
+                    name = "How to delete old generations on NixOS";
+                    url = "https://www.reddit.com/r/NixOS/comments/10107km/how_to_delete_old_generations_on_nixos/";
+                  }
                 ];
               }
             ];

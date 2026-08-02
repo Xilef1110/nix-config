@@ -22,6 +22,7 @@
         gthumb
         xmage
         mullvad-browser
+        itch
       ];
       programs.kdeconnect.enable = true;
     };
