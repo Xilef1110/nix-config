@@ -1,22 +1,8 @@
-{ self, inputs, ... }:
+{ self, ... }:
 {
-  flake.nixosModules.asusGnomeConfiguration =
-    { config, pkgs, ... }:
-
+  flake.nixosModules.gnomePackages =
+    { pkgs, ... }:
     {
-      imports = [
-        # Include the results of the hardware scan.
-        self.nixosModules.asusShared
-        self.nixosModules.gnomePackages
-      ];
-
-      home-manager.users.felix = self.homeModules.asusGnomeHomeModule;
-      # Enable the GNOME Desktop Environment.
-      services.displayManager.gdm.enable = true;
-      services.desktopManager.gnome.enable = true;
-
-      # List packages installed in system profile. To search, run:
-      # $ nix search wget
       environment.systemPackages = with pkgs; [
         helix
         git
@@ -44,9 +30,5 @@
         tali # poker game
         totem # video player
       ];
-      # Before changing this value read the documentation for this option
-      # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-      system.stateVersion = "26.05"; # Did you read the comment?
-
     };
 }
