@@ -4,9 +4,6 @@
     { pkgs, ... }:
     {
       environment.systemPackages = with pkgs; [
-        helix
-        git
-        wl-clipboard
         gnome-extension-manager
         gnomeExtensions.gsconnect
         gnomeExtensions.simpleweather
@@ -14,6 +11,7 @@
         gnomeExtensions.vitals
         gnomeExtensions.extension-list
         gnomeExtensions.appindicator
+        gnomeExtensions.launch-new-instance
         gnome-tweaks
       ];
       environment.gnome.excludePackages = with pkgs; [
