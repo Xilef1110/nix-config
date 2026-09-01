@@ -7,7 +7,7 @@
         onedrivegui
         git
         _1password-gui
-        onlyoffice
+        onlyoffice-desktopeditors
         libreoffice
         hunspell
         hunspellDicts.en-ca
