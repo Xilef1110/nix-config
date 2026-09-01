@@ -4,6 +4,7 @@
     { pkgs, ... }:
     {
 
+      programs.zoxide.enableBashIntegration = true;
       environment.systemPackages = with pkgs; [
         resources
         wl-clipboard

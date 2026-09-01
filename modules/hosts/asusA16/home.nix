@@ -18,6 +18,9 @@
         enable = true;
         package = pkgs.onedrive;
       };
+
+      programs.zoxide.enable = true;
+
       home.stateVersion = "26.05";
     };
 }
