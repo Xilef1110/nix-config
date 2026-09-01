@@ -7,18 +7,14 @@
         onedrivegui
         git
         _1password-gui
-        nil
-        nixd
+        onlyoffice
         libreoffice
         hunspell
         hunspellDicts.en-ca
         hunspellDicts.de-at
-        nautilus
         obsidian
-        kdePackages.kdeconnect-kde
         josm
         vlc
-        loupe
         gthumb
         xmage
         mullvad-browser
