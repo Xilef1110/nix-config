@@ -11,7 +11,7 @@
           background-opacity = "0.95";
           background-blur = "16";
           confirm-close-surface = true;
-          mouse-scroll-multiplier = 3;
+          mouse-scroll-multiplier = 5;
           keybind = [
             # tabs
             "ctrl+t=new_tab"
