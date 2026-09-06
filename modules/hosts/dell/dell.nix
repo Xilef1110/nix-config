@@ -6,7 +6,7 @@
       imports = [
         self.nixosModules.myHomeManager
         self.nixosModules.myMachineHardware
-        self.nixosModules.packages
+        self.nixosModules.minimalPackages
         self.nixosModules.communication
         self.nixosModules.system
         self.nixosModules.academia
