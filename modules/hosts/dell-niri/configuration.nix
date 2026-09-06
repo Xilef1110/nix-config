@@ -19,7 +19,20 @@
       boot.loader.efi.canTouchEfiVariables = true;
 
       networking.hostName = "nixos"; # Define your hostname.
-      # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+      networking.wireless.enable = true; # Enables wireless support via wpa_supplicant.
+
+      # users.extraUsers.felix.extraGroups = [ "wheel" ];
+      # networking.wireless.userControlled.enable = true;
+      # networking.wireless.secretsFile = "/home/felix/Documents/conf/wireless.conf";
+      # networking.wireless.networks."ubcsecure" = {
+      #   auth = ''
+      #     key_mgmt=WPA-EAP
+      #     eap=PEAP
+      #     phase2="auth=MSCHAPV2"
+      #     identity="fstock"
+      #     password="ext:pass_ubc"
+      #   '';
+      # };
 
       # Enable networking
       networking.networkmanager.enable = true;
@@ -77,9 +90,6 @@
           "networkmanager"
           "wheel"
         ];
-        packages = with pkgs; [
-          #  thunderbird
-        ];
       };
       home-manager.users.felix = self.homeModules.dellNiriHomeModule;
 
@@ -88,7 +98,6 @@
 
       # List services that you want to enable:
       hardware.bluetooth.enable = true;
-      networking.wireless.enable = true;
       nix.settings.experimental-features = [
         "nix-command"
         "flakes"
