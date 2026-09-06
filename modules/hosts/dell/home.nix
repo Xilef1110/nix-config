@@ -1,7 +1,7 @@
-{ self }:
+{ self, ... }:
 {
   flake.homeModules.dellHomeModule =
-    { pkgs }:
+    { pkgs, ... }:
     {
       imports = [
         self.homeModules.helix

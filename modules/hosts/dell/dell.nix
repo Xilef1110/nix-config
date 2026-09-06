@@ -1,7 +1,7 @@
-{ self }:
+{ self, ... }:
 {
-  flake.nixosModules.dellShare =
-    { pkgs }:
+  flake.nixosModules.dellShared =
+    { pkgs, ... }:
     {
       imports = [
         self.nixosModules.myHomeManager
