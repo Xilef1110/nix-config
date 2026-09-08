@@ -1,7 +1,7 @@
-{ self, inputs, ... }:
+{ self, ... }:
 {
   flake.nixosModules.packages =
-    { pkgs, lib, ... }:
+    { pkgs, ... }:
     {
       imports = [
         self.nixosModules.minimalPackages
@@ -14,6 +14,7 @@
         gthumb
         xmage
         itch
+        mediawriter
       ];
       programs.kdeconnect.enable = true;
     };
