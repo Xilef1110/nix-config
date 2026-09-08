@@ -15,6 +15,7 @@
         self.nixosModules.academia
         self.nixosModules.dev
         self.nixosModules.llm
+        self.nixosModules.cisco
       ];
       # Bootloader.
       boot.loader.systemd-boot.enable = true;

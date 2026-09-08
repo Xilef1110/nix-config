@@ -11,6 +11,7 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    inputs.anyconnect-webauth.url = "github:z10n-dev/nixos-anyconnect-webauth";
   };
 
   outputs =
