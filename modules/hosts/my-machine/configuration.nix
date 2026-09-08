@@ -18,7 +18,7 @@
       boot.loader.efi.canTouchEfiVariables = true;
 
       networking.hostName = "nixos"; # Define your hostname.
-      # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+      networking.wireless.enable = true; # Enables wireless support via wpa_supplicant.
 
       # Enable networking
       networking.networkmanager.enable = true;
@@ -104,7 +104,6 @@
 
       # List services that you want to enable:
       hardware.bluetooth.enable = true;
-      networking.wireless.enable = true;
       nix.settings.experimental-features = [
         "nix-command"
         "flakes"

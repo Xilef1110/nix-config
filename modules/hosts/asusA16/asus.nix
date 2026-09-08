@@ -15,7 +15,7 @@
         self.nixosModules.academia
         self.nixosModules.dev
         self.nixosModules.llm
-        # self.nixosModules.cisco
+        self.nixosModules.cisco
       ];
       # Bootloader.
       boot.loader.systemd-boot.enable = true;
@@ -28,10 +28,9 @@
       services.libinput.enable = true;
 
       networking.hostName = "nixos"; # Define your hostname.
-      # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+      # networking.wireless.enable = true; # Enables wireless support via wpa_supplicant.
 
       # Enable networking
-      networking.networkmanager.enable = true;
 
       # Set your time zone.
       time.timeZone = "America/Vancouver";
@@ -69,7 +68,7 @@
         isNormalUser = true;
         description = "Felix";
         extraGroups = [
-          "networkmanager"
+          # "networkmanager"
           "wheel"
         ];
       };
