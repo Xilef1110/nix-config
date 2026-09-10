@@ -1,7 +1,10 @@
-{
+{ self, ... }: {
   flake.nixosModules.minimalPackages =
     { pkgs, ... }:
     {
+      imports = [
+        self.nixosModules.system
+      ];
       environment.systemPackages = with pkgs; [
         onedrivegui
         git
@@ -11,6 +14,7 @@
         hunspellDicts.de-at
         vlc
         mullvad-browser
+        efibootmgr
       ];
       programs.kdeconnect.enable = true;
     };
