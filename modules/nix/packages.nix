@@ -15,6 +15,7 @@
         xmage
         itch
         mediawriter
+        unetbootin
       ];
       programs.kdeconnect.enable = true;
     };
