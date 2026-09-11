@@ -7,8 +7,10 @@
         self.homeModules.helix
         self.homeModules.firefox
         self.homeModules.ghostty
+        self.homeModules.packages
       ];
       programs.bash.enable = true;
+      programs.home-manager.enable = true;
 
       programs.onedrive = {
         enable = true;

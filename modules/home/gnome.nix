@@ -1,6 +1,6 @@
 { self, inputs, ... }:
 {
-  flake.homeModules.gnome =
+  flake.homeModules.packages =
     { pkgs, lib, ... }:
     {
       dconf = {
