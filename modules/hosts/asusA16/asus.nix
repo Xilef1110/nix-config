@@ -16,6 +16,7 @@
         self.nixosModules.dev
         self.nixosModules.llm
         self.nixosModules.cisco
+        self.nixosModules.fonts
       ];
       # Bootloader.
       boot.loader.systemd-boot.enable = true;
