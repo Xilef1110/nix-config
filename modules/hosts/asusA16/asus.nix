@@ -15,7 +15,7 @@
         self.nixosModules.academia
         self.nixosModules.dev
         self.nixosModules.llm
-        self.nixosModules.cisco
+        # self.nixosModules.cisco
         self.nixosModules.fonts
       ];
       # Bootloader.
