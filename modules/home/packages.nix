@@ -21,6 +21,7 @@
         vlc
         typst
         tinymist
+        devenv
       ];
     };
 }
