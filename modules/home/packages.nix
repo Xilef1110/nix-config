@@ -1,4 +1,3 @@
-
 { self, inputs, ... }:
 {
   flake.homeModules.packages =
@@ -20,7 +19,8 @@
         hunspellDicts.en-ca
         hunspellDicts.de-at
         vlc
+        typst
+        tinymist
       ];
-      };
-    }
-
+    };
+}
