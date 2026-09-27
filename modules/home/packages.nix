@@ -22,6 +22,8 @@
         typst
         tinymist
         devenv
+        burpsuite
+        guix
       ];
     };
 }

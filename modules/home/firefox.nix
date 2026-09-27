@@ -119,6 +119,14 @@
                     name = "Scope - coop";
                     url = "https://scope.sciencecoop.ubc.ca/";
                   }
+                  {
+                    name = "Canvas";
+                    url = "https://canvas.ubc.ca";
+                  }
+                  {
+                    name = "Y86 sym";
+                    url = "https://www.students.cs.ubc.ca/~cs-313/simulator/?arch=y86&impl=seq";
+                  }
                 ];
               }
               {
