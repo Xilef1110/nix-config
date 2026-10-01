@@ -9,6 +9,9 @@
         resources
         nil
         nixd
+        marksman
+        mpls
+        tinymist
         ripgrep
         fd
         bat
@@ -20,10 +23,10 @@
         hunspellDicts.de-at
         vlc
         typst
-        tinymist
         devenv
         burpsuite
         guix
+
       ];
     };
 }

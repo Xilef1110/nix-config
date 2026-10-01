@@ -28,6 +28,14 @@
             # formatter.command = lib.getExe pkgs.nixfmt-rfc-style;
           }
           {
+            name = "markdown";
+            language-servers = [
+              "mpls"
+              "marksman"
+            ];
+
+          }
+          {
             name = "python";
             auto-format = true;
             language-servers = [
@@ -60,6 +68,13 @@
                 "--open"
               ];
             };
+          };
+          mpls = {
+            command = "mpls";
+            config = {
+              markdown.preview.auto = true;
+            };
+
           };
         };
 
