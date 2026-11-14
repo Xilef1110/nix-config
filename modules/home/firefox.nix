@@ -40,7 +40,7 @@
           # Networking
           DNSOverHTTPS = {
             Enabled = true;
-            ProviderURL = "https://base.dns.mullvad.net/dns-query";
+            ProviderURL = "https://dns.quad9.net/dns-query";
             Fallback = false;
           };
           HttpsOnlyMode = "enabled";
